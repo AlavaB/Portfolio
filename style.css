@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'droid_serifregular';
+    src: url('./font/droidserif-regular-webfont.woff') format('woff2'),
+         url('./font/droidserif-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #fcf3e9;
+  font-family: 'droid_serifregular', Arial, Helvetica, sans-serif;
+  color: #392113;
+}
+section {
+  padding: 20px 0;
+}
+.part-title {
+  margin: 30px 0;
+  padding-bottom: 10px;
+  font-size: 2.8em;
+  color: #392113;
+  border-bottom: 3px solid #a8b39d;
+}
+#presentation:before, #skills:before, #career:before, #realisations:before {
+  display: block;
+  content: "";
+  height: 50px;
+}
+@media screen and (max-width: 1250px) {
+  .part-title {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 750px)  {
+  .part-title {
+    font-size: 2em;
+  }
+}
+
+
+/*Welcome page*/
+header {
+  margin: 0 0;
+  padding: 0 0;
+}
+.header-picture {
+  height: 937px;
+  background: url(images/laptop-2055522_1920.jpg) no-repeat fixed;
+  background-size: cover;
+  opacity: 0.7;
+}
+.header-text {
+  position: relative;
+  height: 180px;
+  top: 160px;
+  text-align: left;
+  color: #fcf3e9;
+  transition: color 0.4s;
+  display: inline-block;
+}
+.header-text:hover {
+  color: #392113;
+}
+.header-paragraph {
+  margin-bottom: 0;
+  font-size: 2em;
+}
+.header-name {
+  font-size: 3em;
+}
+@media screen and (max-width: 1130px) {
+  .header-text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 850px)  {
+  .header-text {
+    width: auto;
+  }
+  .header-name {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 570px) {
+  .header-picture {
+    height: 760px;
+  }
+  .header-name {
+    font-size: 1.8em;
+  }
+  .header-paragraph {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header-picture {
+    height: 580px;
+  }
+  .header-name {
+    font-size: 1.3em;
+  }
+  .header-paragraph {
+    font-size: 1.1em;
+  }
+}
+
+/*Navigation*/
+#navigation {
+  z-index: 99;
+}
+.navbar { 
+  background-color: #a8b39d;
+  justify-content: space-evenly;
+  height: 100px;
+}
+.navbar-brand {
+  padding-left: 5%;
+  color:  #392113 !important; 
+  font-size: 1.6em; 
+}
+.navbar-nav {
+  padding-right: 5%;
+}
+li { 
+  text-align: center;
+}
+.nav-link {
+  font-size: 1em;
+  color:  #392113 !important;
+  background-color: #a8b39d;
+  transition: color 0.4s;
+}
+.nav-link:hover {
+  color: #fcf3e9 !important;
+}
+.sticky {/*created with js*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 1250px) {
+  .navbar-brand {
+    padding-left: 0;
+  }
+  .navbar-nav {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    height: auto;
+  }
+}
+@media screen and (max-width: 980px) {
+  #presentation:before, #skills:before, #career:before, #realisations:before {
+    height: 20px;
+  }
+}
+
+
+/*Presentation*/
+.presentation-paragraph {
+  padding: 8px 50px;
+  text-align: justify;
+  text-indent: 70px;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 768px) {
+  .presentation-paragraph {
+    padding: 8px 5px;
+    font-size: 1em;
+  }
+}
+
+/*Skills*/
+#skills {
+  background-color: #f8e8d3;
+}
+.skills-details {
+  width: 80%;
+  text-align: center;
+  margin: 10% 10%;
+}
+.skills-paragraph {
+  margin-bottom: 10px;
+}
+.progress {
+  margin: 0 10%;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 8px;
+  background-color: #fcf3e9;
+  border-radius: 20px;
+}
+.progress-bar {
+  background-color: #a8b39d;
+  border-radius: 20px;
+}
+@media screen and (max-width: 790px) {
+  .skills-details {
+    width: 100%;
+    margin: 0 0;
+  }
+  .progress {
+    height: 6px;
+  }
+}
+
+/*Timeline*/
+.timeline:before {
+  content: ' ';
+  background: #a8b39d;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+.timeline {
+  position: relative;
+  margin-left: 50px;
+  z-index: 0;
+}
+.timeline-box {
+  margin: 20px 40px;
+  padding: 5px 10px;
+}
+.timeline-box:before {
+  content: ' ';
+  background:#a8b39d;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #a8b39d;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+.timeline-box-details {
+  margin: 20px 10px;
+  padding: 5px 10px;
+  background-color:  #f8e8d3;
+  border-radius: 6px;
+}
+.timeline-box-details-date {
+  font-size: 1.2em;
+  
+  margin-bottom: 5px;
+}
+.timeline-box-details-title {
+  font-size: 1.5em;
+}
+.timeline-box-details-content {
+  text-align: justify; 
+}
+@media screen and (max-width: 768px) {
+  .timeline-box-details-date {
+    font-size: 1em;
+  }
+  .timeline-box-details-title {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 576px) {
+  
+  .timeline-box-details-content {
+    display: none;
+  }
+}
+
+/*Realisation*/
+#realisations {
+  background-color: #f8e8d3;
+  padding-bottom: 60px;
+}
+.realisation-title {
+  padding: 15px 0;
+  text-align: center;
+}
+.card {
+  width: 18rem;
+}
+.card-text {
+  width: 18rem;
+}
+.go-to-site {
+  background-color: #a8b39d !important;
+}
+
+
+
+/*.content-image {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+}
+.content-text {
+  background-color: #a8b39d;
+  color: #392113;
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  border-radius: 5px;
+  visibility: hidden;
+  position: absolute;
+  padding: 10px 10px;
+  opacity: 0;
+  transition: opacity 0.8s, visibility 0.8s;
+}
+.content-image:hover .content-text {
+  visibility: visible;
+  opacity: 1;
+}*/
+
+.first-project {
+  background: url("./images/ohmyfoodtest.png");
+  background-repeat: no-repeat;
+}
+.second-project {
+  background: url("./images/orioak.png");
+}
+.third-project {
+
+}
+
+/*Footer*/
+#contact {
+  background-color: #a8b39d;
+}
+.contact {
+  padding: 30px 50px;
+  text-align: center;
+}
+.footer-title {
+  margin: 20px 0;
+  padding-bottom: 10px;
+  font-size: 2.8em;
+}
+.footer-title:hover {
+  animation: heartBeat;
+  animation-duration: 4s;
+}
+.contact-details {
+  color: black;
+}
+.contact-content {
+  margin-bottom: 0;
+}
+.contact-icon {
+  width: 40px;
+  height: 40px;
+}
+.links {
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width: 993px) {
+  .contact {
+    padding: 30px 0;
+  }
+  .contact-content {
+    font-size: 0.8em;
+  }
+
+}

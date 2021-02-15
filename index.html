@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,224 +7,286 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
-  <title>Emilie Bojkovic - Développeur Web</title>
+  <title>Emilie BOJKOVIC</title>
 </head>
-
 <body>
-  <!--Page d'accueil-->
-  <div class="welcome-page">
-    <header>
-      <div class="text-header">
-        <div>Bonjour,</div>
-        <h1>Je m'appelle Emilie Bojkovic,</h1>
-        <div>je suis développeur Web junior</div>
+  
+  <!--Welcome page-->
+  <header class="container-fluid">
+    <div class="row header-picture">
+      <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10 header-text">
+        <p class="header-paragraph">Bonjour,</p>
+        <h1 class="header-name">Je m'appelle Emilie Bojkovic,</h1>
+        <p class="header-paragraph">je suis développeur Web junior.</p>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 
-  <!--Liens de navigation-->
-  <div class="navigation">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class=" nav-title navbar-brand" href="#">Emilie BOJKOVIC</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  
+
+  <!--Navigation-->
+  <div class="container-fluid mb-3">
+    <div id="navigation" class="row">
+      <nav id="navbarSupportedContent" class="col navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Emilie BOJKOVIC</a>
+        <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+              <a class="nav-link link-colored" href="#presentation">PRESENTATION</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PARCOURS</a>
+              <a class="nav-link" href="#skills">COMPETENCES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">REALISATIONS</a>
+              <a class="nav-link" href="#career">PARCOURS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="#realisations">REALISATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
 
-  <main>
-    <!--Parcours-->
-    <article class="presentation">
-      <div class="container">
-        <h2 id="career" class="presentation-title">Mon parcours professionnel atypique</h2>
-        <div class="underline"></div>
-        <p>
-          Pendant 20 ans, j'ai acquis une solide expérience professionnelle sur le terrain. Dans la restauration pendant 8
-          ans à
-          de nombreux postes mais, toujours en contact avec le client, j'ai appris à gérer le stress et les pics
-          d'activités
-          à
-          l'heure des repas notamment. Dans l'immobilier au service location d'une agence j'ai étendu mes compétences en
-          termes de
-          contact clientèle, je contactais les locataires ou les propriétaires par téléphone et par email, en français et
-          en
-          anglais et j'ai appris à monter et à suivre les dossiers de location d'appartements. En tant que télésecrétaire
-          pendant
-          5 ans je me suis servie de ma polyvalence et de ma persévérance pour répondre en moyenne à 200 appels par jour
-          sur
-          environ 300 dossiers différents. Forte de toutes ces expériences qui m'ont permis de développer des compétences
-          utilisables et projetables, un plus dans mon nouveau métier de développeur Web, je souhaite désormais travailler
-          plus
-          sereinement dans une atmosphère professionnelle moderne.
+  <!--Presentation-->
+  <section class="container" id="presentation">
+    <div class="row presentation">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <h2 class="part-title">Je me présente</h2>
+        <p class="presentation-paragraph">Récemment diplômée Développeur Web à la suite d'une reconversion professionnelle, je suis à la recherche de mon premier emploi dans le développement,
+          je souhaite progresser dans ce
+          métier
+          et
+          pouvoir réaliser des projets modernes, créatifs au sein d'une équipe de développeurs. 
         </p>
-    </article>
-    <article>
-      <h2 id="skill">Soft skills</h2>
-      <h3>Adaptation / Réactivité</h3>
-      <div class="skill-bar">
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
+        <p class="presentation-paragraph">J'utilise quotidiennement
+          les
+          langages html, CSS et JavaScript, j'ai réalisé des intégrations de maquettes, un site e-commerce et un réseau
+          social
+          d'entreprise. J'ai acquis des compétences avec React.js et je voudrais continuer à travailler avec cette
+          librairie. En
+          tant que junior je veux améliorer mes compétences en frontend mais, je suis également attirée par le backend et
+          la
+          gestion des API.
+          
+        </p>
+        <p class="presentation-paragraph">Ces 20 dernières années j'ai travaillé dans différents secteurs d'activité, j'ai profité des opportunités qui
+          s'offraient à moi. Mon expérience dans la restauration m'a permis d'acquérir des compétences dans la gestion du stress et de la clientèle, 
+          en évaluant les besoin du client et en étant à son écoute. Au sein du service location d'une
+          agence
+          immobilière j'ai échangé avec des personnes du monde entier, j'ai assuré le suivi des contrats et de 
+          l'entretien des appartements. Le secrétariat m'a appris à m'organiser et grâce à la polyvalence que j'ai acquise je sais prioriser les taches à
+          effectuer.            
+        </p>
       </div>
-      <h3>Polyvalence / Efficacité</h3>
-      <div class="skill-bar">
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
+    </div>
+  </section>
+
+  <!--Skills-->
+  <section class="container-fluid" id="skills"> 
+    <div class="container">
+      <div class="row skills">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <h2 class="part-title">Mes Hard skills</h2>
+          <div class="skills-details">
+            <p class="skills-paragraph">HTML / CSS / BOOTSTRAP / SASS</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <p class="skills-paragraph">JavaScript / Vue.js / React.js</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 65%"></div>
+            </div>
+            <p class="skills-paragraph">API REST/ Node.js / Express</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <p class="skills-paragraph">SQL / MongoDB</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <h2 class="part-title">Mes Soft skills</h2>
+          <div class="skills-details">
+            <p class="skills-paragraph">Adaptation / Réactivité</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+            <p class="skills-paragraph">Polyvalence / Efficacité</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 95%"></div>
+            </div>
+            <p class="skills-paragraph">Sens du contact</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <h3>Sens du contact</h3>
-      <div class="skill-bar">
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-      </div>
-    </article>
-    <article>
-      <h2 class="presentation-title">Mon parcours dans le développement</h2>
-      <div class="underline"></div>
-      <p>Fraîchement diplômée, je veux intégrer une équipe de développeurs réactive, créative et technique pour évoluer
-        dans mon
-        métier.
-        Je suis en mesure de suivre un cahier des charges, d'intégrer des pages Web avec HTML et CSS, de dynamiser du
-        contenu
-        avec JavaScript, de construire des API sécurisées et d'administrer des bases de données.
-      </p>
-    </article>
-    <article>
-      <h2 id="skill">Hard skills</h2>
-      <h3>HTML / CSS / BOOTSTRAP / SASS</h3>
-      <div class="skill-bar">
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate-off"></div>
-        <div class="skill-rate-off"></div>
-      </div>
-      <h3>JavaScript / Vue.js</h3>
-      <div class="skill-bar">
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate-off"></div>
-        <div class="skill-rate-off"></div>
-      </div>
-      <h3>API REST/ Node.js / Express</h3>
-      <div class="skill-bar">
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate-off"></div>
-      </div>
-      <h3>SQL / MongoDB</h3>
-      <div class="skill-bar">
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate"></div>
-        <div class="skill-rate-off"></div>
-        <div class="skill-rate-off"></div>
-      </div>
-    </article>
+    </div>
     
-      </div>
-      
+  </section>
 
-        <!--Réalisations-->
-    <article>
-      <h2 id="production">Mes réalisations</h2>
-      <div class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="" alt="First slide">
+  <!--Timeline-->
+  <section class="container" id="career">
+    <div class="row career">
+      <h2 class="part-title">Mon parcours</h2>
+      <div class="col-md-10 offset-md-1">        
+        <div class="timeline">
+          <div class="timeline-box">
+            <div class="timeline-box-details">
+              <h3 class="timeline-box-details-title">Développeur Web stagiaire</h3>
+              <div class="timeline-box-details-date">Février 2021</div>
+              <p class="timeline-box-details-content">J'ai réalisé un stage de 15 jours au sein du service informatique d'une startup. J'ai utilisé React.js pour créer 
+                un composant dynamique s'intégrant dans un projet en cours.</p>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" href="https://ohmyfood.bojkovic.fr" alt="Second slide">
+          <div class="timeline-box">
+            <div class="timeline-box-details">
+              <div class="timeline-box-details-date">Décembre 2020</div>
+              <h3 class="timeline-box-details-title">Diplôme de Développeur Web</h3>
+              <p class="timeline-box-details-content">J'ai suivi une formation de Développeur Web, titre RNCP de niveau 5
+                (bac +2) avec
+                OpenClassrooms. <br> J'ai intégré des maquettes, créé un site e-commerce et un réseau social
+                d'entreprise. J'ai construit des API sécurisées.</p>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
+          <div>
+            <div class="timeline-box">
+              <div class="timeline-box-details">
+                <div class="timeline-box-details-date">De 2015 à 2020</div>
+                <h3 class="timeline-box-details-title">Télésecrétaire</h3>
+                <p class="timeline-box-details-content">J'ai utilisé polyvalence et persévérance pour répondre
+                  en moyenne à 200
+                  appels par jour sur environ
+                  300 dossiers différents.</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-box-details">
+              <div class="timeline-box-details-date">de 2008 à 2011</div>
+              <h3 class="timeline-box-details-title">Agent de location imobilière</h3>
+              <p class="timeline-box-details-content">J'ai étendu mes compétences en termes de contact clientèle, je
+                contactais les
+                locataires ou les propriétaires par
+                téléphone et par email, en français et en anglais et j'ai appris à monter et à suivre les dossiers de
+                location d'appartements.</p>
+            </div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-box-details">
+              <div class="timeline-box-details-date">de 2000 à 2008</div>
+              <h3 class="timeline-box-details-title">Différents postes dans la restauration</h3>
+              <p class="timeline-box-details-content">Serveuse, Chef de rang puis Assistante Maître d'hôtel, en contact direct avec le client, j'ai appris à gérer le stress et les
+                pics
+                d'activité à l'heure des repas notamment.</p>
+            </div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-box-details">
+              <div class="timeline-box-details-date">1999</div>
+              <h3 class="timeline-box-details-title">Baccalauréat Général</h3>
+              <p class="timeline-box-details-content">Niveau Bac Littéraire</p>
+            </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-    </article>
+    </div>
+  </section>
 
-    <!--Loisirs-->
-    <article>
-
-    </article>
-  </main>
-
-  <!--Contact-->
-  <footer>
-    <h2 id="contact">Mon contact</h2>
-    <!--faire un formulaire de contact-->
-    </article>
-    <footer>
-      <!--voir pour garder footer sur toutes les pages-->
-      <div class="contact-title">
-        <a href="#contact">
-          <h2>Mon contact</h2>
-        </a>
-
+  <!--Realisation-->
+  <section class="container-fluid" id="realisations">
+    <div class="container">
+      <div class="row">    
+        <h2 class="part-title">Mes Réalisations</h2>
       </div>
-      <div class="contact-content">
-        <div>
-          <!--insérer une icone email + linkedin-->
-          <p>emilie.bojkovic@outlook.com</p>
-          <p>linkedin.com/in/emilie-bojkovic</p>
+      <div class="row">
+        <div class="col-lg-4 realisation">
+          <div class="card first-project"></div>
+            <div class="card-body">
+              <h3 class="card-title">Ohmyfood</h3>
+              <p class="card-text">Réalisation d'une carte de menus de restaurant.
+              Les comptétences évaluées étaient : intégrer du contenu conformément à une maquette, utiliser html et
+              CSS, utiliser un système de gestion de versions pour le suivi du projet, implémenter une interface responsive.
+              </p>
+              <a href="https://ohmyfood.bojkovic.fr/" class="btn go-to-site" target="_blank">Voir le site</a>
+            </div>
+          
         </div>
-        <div>
-          <!--insérer une icone téléphone-->
-          <p>06 51 53 18 59</p>
+        <div class="col-lg-4 realisation">
+          <div class="card second-project"></div>
+            <div class="card-body">
+              <h3 class="card-title">Orioak</h3>
+              <p class="card-text">Création d'un site e-commerce en utilisant les données d'une API
+                Les comptétences évaluées étaient : créer un plan de test pour une application, gérer des événements 
+                JavaScript, interagir avec un web service avec JavaScript, valider des données issues de sources externes.
+              </p>
+              <a href="https://orioak.bojkovic.fr/" class="btn go-to-site" target="_blank">Voir le site</a>
+            </div>
+          
         </div>
-        <div>
-          <!--insérer une icone adresse-->
-          <p>90 rue Pierre Renaudel - 33130 Bègles</p>
+        <div class="col-lg-4 realisation">
+          <div class="card third-project"></div>
+            <div class="card-body">
+              <h3 class="card-title">Groupomania</h3>
+              <p class="card-text">Création d'un site e-commerce en utilisant les données d'une API.
+                Les comptétences évaluées étaient : personnaliser le contenu envoyé à un client, gérer un stockage de données à l'aide de SQL 
+                mplémenter un stockage de données sécurisés avec SQL, authentifier un utilisateur et maintenir sa session.
+              </p>
+            </div>
+          
+        </div>
+          
+        
+      </div>        
+    </div>   
+  </section>
+
+  <!--Footer-->  
+  <footer class="container-fluid" id="contact">
+    <div class="container">
+      <div class="row contact">
+        <div class="col-md-3 col-lg-3 contact-details">
+          <img class="contact-icon" src="images/email.png" alt="">
+          <p class="contact-content">emilie.bojkovic@outlook.com</p>
+        </div>
+        <div class="col-md-3 col-lg-3 contact-details">
+          <img class="contact-icon" src="images/phone.png" alt="">
+          <p class="contact-content">06 51 53 18 59</p>
+        </div>
+        <div class="col-md-3 col-lg-3 contact-details">
+          <img class="contact-icon" src="images/localisation.png" alt="">
+          <p class="contact-content">33130 Bègles</p>
+        </div>
+        <div class="col-md-3 col-lg-3 contact-details">
+            <a class="links" href=""><img src="images/linkedin.png" alt="">Linkedin</a></br>
+            <a class="links" href=""><img src="images/github.png" alt="">GitHub</a>
         </div>
       </div>
-    </footer>
-    <!--faire des liens dans la page-->
+    </div>
+    
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
 
 </body>
-
 </html>
