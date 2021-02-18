@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,12 @@
   <link rel="stylesheet" href="style.css">
   <title>Emilie BOJKOVIC</title>
 </head>
-<body>
-  
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
   <!--Welcome page-->
-  <header class="container-fluid">
-    <div class="row header-picture">
+  <header class="container-fluid header-picture">
+    <div class="row">
       <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10 header-text">
         <p class="header-paragraph">Bonjour,</p>
         <h1 class="header-name">Je m'appelle Emilie Bojkovic,</h1>
@@ -22,37 +24,36 @@
     </div>
   </header>
 
-  
+
 
   <!--Navigation-->
-  <div class="container-fluid mb-3">
-    <div id="navigation" class="row">
-      <nav id="navbarSupportedContent" class="col navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Emilie BOJKOVIC</a>
-        <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link link-colored" href="#presentation">PRESENTATION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">COMPETENCES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#career">PARCOURS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#realisations">REALISATIONS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <div id="navigation" class="container-fluid mb-3">
+    <div class="container">
+      <div class="row">
+        <nav id="navbarSupportedContent" class="col navbar navbar-inverse navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Emilie BOJKOVIC</a>
+          <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">COMPETENCES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#career">PARCOURS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#realisations">REALISATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </div>
 
@@ -61,11 +62,13 @@
     <div class="row presentation">
       <div class="col-sm-12 col-md-12 col-lg-12">
         <h2 class="part-title">Je me présente</h2>
-        <p class="presentation-paragraph">Récemment diplômée Développeur Web à la suite d'une reconversion professionnelle, je suis à la recherche de mon premier emploi dans le développement,
+        <div class="presentation-picture"></div>
+        <p class="presentation-paragraph">Récemment diplômée Développeur Web à la suite d'une reconversion
+          professionnelle, je suis à la recherche de mon premier emploi dans le développement,
           je souhaite progresser dans ce
           métier
           et
-          pouvoir réaliser des projets modernes, créatifs au sein d'une équipe de développeurs. 
+          pouvoir réaliser des projets modernes, créatifs au sein d'une équipe de développeurs.
         </p>
         <p class="presentation-paragraph">J'utilise quotidiennement
           les
@@ -73,25 +76,29 @@
           social
           d'entreprise. J'ai acquis des compétences avec React.js et je voudrais continuer à travailler avec cette
           librairie. En
-          tant que junior je veux améliorer mes compétences en frontend mais, je suis également attirée par le backend et
+          tant que junior je veux améliorer mes compétences en frontend mais, je suis également attirée par le backend
+          et
           la
           gestion des API.
-          
+
         </p>
-        <p class="presentation-paragraph">Ces 20 dernières années j'ai travaillé dans différents secteurs d'activité, j'ai profité des opportunités qui
-          s'offraient à moi. Mon expérience dans la restauration m'a permis d'acquérir des compétences dans la gestion du stress et de la clientèle, 
+        <p class="presentation-paragraph">Ces 20 dernières années j'ai travaillé dans différents secteurs d'activité,
+          j'ai profité des opportunités qui
+          s'offraient à moi. Mon expérience dans la restauration m'a permis d'acquérir des compétences dans la gestion
+          du stress et de la clientèle,
           en évaluant les besoin du client et en étant à son écoute. Au sein du service location d'une
           agence
-          immobilière j'ai échangé avec des personnes du monde entier, j'ai assuré le suivi des contrats et de 
-          l'entretien des appartements. Le secrétariat m'a appris à m'organiser et grâce à la polyvalence que j'ai acquise je sais prioriser les taches à
-          effectuer.            
+          immobilière j'ai échangé avec des personnes du monde entier, j'ai assuré le suivi des contrats et de
+          l'entretien des appartements. Le secrétariat m'a appris à m'organiser et grâce à la polyvalence que j'ai
+          acquise je sais prioriser les taches à
+          effectuer.
         </p>
       </div>
     </div>
   </section>
 
   <!--Skills-->
-  <section class="container-fluid" id="skills"> 
+  <section class="container-fluid" id="skills">
     <div class="container">
       <div class="row skills">
         <div class="col-sm-6 col-md-6 col-lg-6">
@@ -99,19 +106,19 @@
           <div class="skills-details">
             <p class="skills-paragraph">HTML / CSS / BOOTSTRAP / SASS</p>
             <div class="progress">
-              <div class="progress-bar" style="width: 75%"></div>
+              <div class="progress-bar" style="width: 65%"></div>
             </div>
             <p class="skills-paragraph">JavaScript / Vue.js / React.js</p>
             <div class="progress">
-              <div class="progress-bar" style="width: 65%"></div>
+              <div class="progress-bar" style="width: 50%"></div>
             </div>
             <p class="skills-paragraph">API REST/ Node.js / Express</p>
             <div class="progress">
-              <div class="progress-bar" style="width: 75%"></div>
+              <div class="progress-bar" style="width: 60%"></div>
             </div>
             <p class="skills-paragraph">SQL / MongoDB</p>
             <div class="progress">
-              <div class="progress-bar" style="width: 60%"></div>
+              <div class="progress-bar" style="width: 55%"></div>
             </div>
           </div>
         </div>
@@ -134,20 +141,21 @@
         </div>
       </div>
     </div>
-    
+
   </section>
 
   <!--Timeline-->
   <section class="container" id="career">
     <div class="row career">
       <h2 class="part-title">Mon parcours</h2>
-      <div class="col-md-10 offset-md-1">        
+      <div class="col-md-10 offset-md-1">
         <div class="timeline">
           <div class="timeline-box">
             <div class="timeline-box-details">
-              <h3 class="timeline-box-details-title">Développeur Web stagiaire</h3>
               <div class="timeline-box-details-date">Février 2021</div>
-              <p class="timeline-box-details-content">J'ai réalisé un stage de 15 jours au sein du service informatique d'une startup. J'ai utilisé React.js pour créer 
+              <h3 class="timeline-box-details-title">Développeur Web stagiaire</h3>           
+              <p class="timeline-box-details-content">J'ai réalisé un stage de 15 jours au sein du service informatique
+                d'une startup. J'ai utilisé React.js pour créer
                 un composant dynamique s'intégrant dans un projet en cours.</p>
             </div>
           </div>
@@ -155,7 +163,8 @@
             <div class="timeline-box-details">
               <div class="timeline-box-details-date">Décembre 2020</div>
               <h3 class="timeline-box-details-title">Diplôme de Développeur Web</h3>
-              <p class="timeline-box-details-content">J'ai suivi une formation de Développeur Web, titre RNCP de niveau 5
+              <p class="timeline-box-details-content">J'ai suivi une formation de Développeur Web, titre RNCP de niveau
+                5
                 (bac +2) avec
                 OpenClassrooms. <br> J'ai intégré des maquettes, créé un site e-commerce et un réseau social
                 d'entreprise. J'ai construit des API sécurisées.</p>
@@ -188,7 +197,8 @@
             <div class="timeline-box-details">
               <div class="timeline-box-details-date">de 2000 à 2008</div>
               <h3 class="timeline-box-details-title">Différents postes dans la restauration</h3>
-              <p class="timeline-box-details-content">Serveuse, Chef de rang puis Assistante Maître d'hôtel, en contact direct avec le client, j'ai appris à gérer le stress et les
+              <p class="timeline-box-details-content">Serveuse, Chef de rang puis Assistante Maître d'hôtel, en contact
+                direct avec le client, j'ai appris à gérer le stress et les
                 pics
                 d'activité à l'heure des repas notamment.</p>
             </div>
@@ -208,85 +218,98 @@
   <!--Realisation-->
   <section class="container-fluid" id="realisations">
     <div class="container">
-      <div class="row">    
+      <div class="row">
         <h2 class="part-title">Mes Réalisations</h2>
       </div>
-      <div class="row">
-        <div class="col-lg-4 realisation">
-          <div class="card first-project"></div>
-            <div class="card-body">
-              <h3 class="card-title">Ohmyfood</h3>
-              <p class="card-text">Réalisation d'une carte de menus de restaurant.
-              Les comptétences évaluées étaient : intégrer du contenu conformément à une maquette, utiliser html et
-              CSS, utiliser un système de gestion de versions pour le suivi du projet, implémenter une interface responsive.
-              </p>
-              <a href="https://ohmyfood.bojkovic.fr/" class="btn go-to-site" target="_blank">Voir le site</a>
-            </div>
-          
-        </div>
-        <div class="col-lg-4 realisation">
-          <div class="card second-project"></div>
-            <div class="card-body">
-              <h3 class="card-title">Orioak</h3>
-              <p class="card-text">Création d'un site e-commerce en utilisant les données d'une API
-                Les comptétences évaluées étaient : créer un plan de test pour une application, gérer des événements 
-                JavaScript, interagir avec un web service avec JavaScript, valider des données issues de sources externes.
-              </p>
-              <a href="https://orioak.bojkovic.fr/" class="btn go-to-site" target="_blank">Voir le site</a>
-            </div>
-          
-        </div>
-        <div class="col-lg-4 realisation">
-          <div class="card third-project"></div>
-            <div class="card-body">
-              <h3 class="card-title">Groupomania</h3>
-              <p class="card-text">Création d'un site e-commerce en utilisant les données d'une API.
-                Les comptétences évaluées étaient : personnaliser le contenu envoyé à un client, gérer un stockage de données à l'aide de SQL 
-                mplémenter un stockage de données sécurisés avec SQL, authentifier un utilisateur et maintenir sa session.
-              </p>
-            </div>
-          
-        </div>
-          
+      
+      <div class="realisation">
         
-      </div>        
-    </div>   
-  </section>
-
-  <!--Footer-->  
-  <footer class="container-fluid" id="contact">
-    <div class="container">
-      <div class="row contact">
-        <div class="col-md-3 col-lg-3 contact-details">
-          <img class="contact-icon" src="images/email.png" alt="">
-          <p class="contact-content">emilie.bojkovic@outlook.com</p>
-        </div>
-        <div class="col-md-3 col-lg-3 contact-details">
-          <img class="contact-icon" src="images/phone.png" alt="">
-          <p class="contact-content">06 51 53 18 59</p>
-        </div>
-        <div class="col-md-3 col-lg-3 contact-details">
-          <img class="contact-icon" src="images/localisation.png" alt="">
-          <p class="contact-content">33130 Bègles</p>
-        </div>
-        <div class="col-md-3 col-lg-3 contact-details">
-            <a class="links" href=""><img src="images/linkedin.png" alt="">Linkedin</a></br>
-            <a class="links" href=""><img src="images/github.png" alt="">GitHub</a>
+          <div class="card-deck">
+            <div class="row ">
+            <div class="col-md-6 col-lg-4 mt-3">
+              <div class="card">
+                <div class="project first-project" >
+                  <div class="card-body">
+                    <h3 class="card-title">Ohmyfood, présentation de menus en ligne.</h3>
+                    <p class="card-text">Intégration d'un contenu conformément à une maquette en html, CSS et SASS. Animations CSS 
+                      et site responsive.
+                    </p>
+                    <a href="https://ohmyfood.bojkovic.fr/" class="btn go-to-site" target="_blank">Voir le site</a>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-3">
+              <div class="card">
+                <div class="project second-project" >
+                <div class="card-body">
+                  <h3 class="card-title">Orioak, site e-commerce.</h3>
+                  <p class="card-text">Création d'un site fonctionnel et dynamique en JavaScript, récupération des données d'une API.
+                  </p>
+                  <a href="https://orioak.bojkovic.fr/" class="btn go-to-site" target="_blank">Voir le site</a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-3">
+              <div class="card">
+                <div class="project third-project">
+                <div class="card-body">
+                  <h3 class="card-title">Réseau social pour l'entreprise Groupomania.</h3>
+                  <p class="card-text">Frontend développé avec Vue.js, API développée avec Node.js et Express, gestion d'un stockage de
+                    données avec MySQL.
+                  </p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
+  </section>
+
+  <!--Footer-->
+  <footer class="container-fluid" id="contact">
+    <div class="container">
+      <div class="contact"> 
+        <div class="row ">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 pb-4 contact-details">
+          <img class="contact-icon" src="images/email.png" alt="">
+          <p class="contact-content">emilie.bojkovic@outlook.com</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 pb-4 contact-details">
+          <img class="contact-icon" src="images/phone.png" alt="">
+          <p class="contact-content">06 51 53 18 59</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 contact-details">
+          <img class="contact-icon" src="images/localisation.png" alt="">
+          <p class="contact-content">33130 Bègles</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 contact-details">
+          <div><a class="links" href="https://linkedin.com/in/emilie-bojkovic" target="_blank"><img src="images/linkedin.png" alt="">Linkedin</a></div>
+          <div><a class="links" href="https://github.com/AlavaB"><img src="images/github.png" alt="">GitHub</a></div> 
+        </div>
+      </div>
+      </div>
+      
+    </div>
+
   </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
   <script src="index.js"></script>
 
 
 </body>
+
 </html>
