@@ -14,9 +14,20 @@ window.onscroll = function () {
 };
 
 
-$(".nav-item").on("click", function (e) {
-  // Remove class active form all li.nav-tiem
-  $("li.nav-item").removeClass("active");
-  // Add Class to current Element.
-  $(this).addClass("active");
-});
+const headerTextColor = document.getElementsByClassName("header-text-color");
+
+let changeColor = (element, event, color) => {
+  element.addEventListener(event, function () {
+    for (let index = 0; index < headerTextColor.length; index++) {
+      const textColor = headerTextColor[index];
+      textColor.style.color = color;
+    }
+  });
+};
+
+for (let index = 0; index < headerTextColor.length; index++) {
+  const element = headerTextColor[index];
+  changeColor(element, "mouseover", "#392113");
+  changeColor(element, "mouseout", "#fcf3e9");
+}
+

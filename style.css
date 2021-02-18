@@ -32,13 +32,13 @@ body {
   }
 }
 
-#skills:before, #career:before, #realisations:before {
+#presentation:before, #skills:before, #career:before, #realisations:before {
   display: block;
   content: "";
   height: 75px;
 }
 @media screen and (max-width: 980px) {
-  #skills:before, #career:before, #realisations:before {
+  #presentation:before, #skills:before, #career:before, #realisations:before {
     height: 45px;
   }
 }
@@ -61,18 +61,18 @@ header {
   top: 160px;
   text-align: left;
   color: #fcf3e9;
-  transition: color 0.4s;
   display: inline;
 }
-.header-text:hover {
-  color: #392113;
-}
 .header-paragraph {
-  margin-bottom: 0;
   font-size: 2em;
+  margin: 0;
 }
 .header-name {
   font-size: 3em;
+}
+.header-text-color {
+  cursor: default;
+  transition: color 0.4s;
 }
 @media screen and (max-width: 1100px)  {
   .header-name {
@@ -108,6 +108,9 @@ header {
 #navigation {
   z-index: 99;
   background-color: #a8b39d;
+}
+.nav-wrapper {
+  height: 100px;
 }
 .navbar { 
   justify-content: space-evenly;
@@ -165,7 +168,10 @@ nav a.active {
 .presentation-picture {
   width: 160px;
   height: 160px;
+  border-radius: 5px;
+  box-shadow: 8px 8px 12px #a8b39d;
   float: right;
+  margin-top: 8px;
   margin-left: 20px;
   margin-right: 50px;
   background: url(images/PhotoEmilie.jpg)  no-repeat;
@@ -310,37 +316,38 @@ nav a.active {
 .card {
   width: auto;
   height: auto;
-  margin-bottom: 28px;
+  margin: 30px 30px;
   text-align: center;
   border-radius: 5px;
-  opacity: 1;
-  transition: visibility 0s linear 0ms, opacity 300ms;
 }
 .card:hover .card-body {
   visibility: visible;
 }
 .card-title {
+  font-size: 1.3em;
   padding: 10px 0;
   text-align: center;
+  
 }
 .go-to-site {
   background-color: #f8e8d3 !important;
 }
 .card-body {
   border-radius: 5px;
-  height: 400px;
+  height: 230px;
   background-color: #a8b39d;
+  color: #392113 !important;
+  cursor: pointer;
   visibility: hidden;
   opacity: 0.9;
 }
 .project {
   border-radius: 5px;
-  height: 400px;
+  height: 230px;
 }
 .first-project {
-
   background: url(./images/ohmyfood\ \(1\).png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 .second-project {
@@ -358,46 +365,50 @@ nav a.active {
     padding-bottom: 80px;
   }
 }
-
+@media screen and (max-width: 550px) {
+  #realisations {
+    padding-bottom: 50px;
+  }
+}
 
 /*Footer*/
 #contact {
   background-color: #a8b39d;
+  line-height: 50px;
 }
 .contact {
   text-align: center;
-  line-height: 50px;
-  vertical-align: middle;
 }
 .footer-title {
   margin: 20px 0;
   padding-bottom: 10px;
   font-size: 2.8em;
 }
-.contact-details {
-  
-  color: black;
-  
-}
-.contact-details:hover > .contact-icon {
-  -webkit-transform: scale(1.4);
-      -ms-transform: scale(1.4);
-          transform: scale(1.4);
-}
 .contact-content {
   margin-bottom: 0;
+  color: black;
 }
 .contact-icon {
   width: 40px;
   height: 40px;
-  margin-bottom: 15px;
-  vertical-align: middle;
-  transition: transform 0.6s;
-}
+  margin-top: 15px;
 
+}
 .links {
   color: black;
   text-decoration: none;
+}
+.links:hover {
+  color: black;
+}
+.mailto {
+  color: black;
+}
+.mailto:hover {
+  color: black;
+}
+.cursor {
+  cursor: default;
 }
 @media screen and (max-width: 993px) {
   .contact {
@@ -407,11 +418,16 @@ nav a.active {
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .contact {
     padding: 20px 0;
   }
-  .contact-details {
-    
+  .contact-content {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contact-content {
+    font-size: 0.6em;
   }
 }
